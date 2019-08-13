@@ -5,17 +5,9 @@ package stackoverflow;
  */
 public class StackOverFlowTest {
     public static void main(String[] args) {
-        cycle();
+        recursionString();
     }
 
-    /**
-     * 极大循环????
-     */
-    private static void cycle(){
-        while(true){
-           Nothing n = new Nothing();
-        }
-    }
 
     /**
      * 递归
@@ -29,5 +21,13 @@ public class StackOverFlowTest {
      */
     private static void abUse(){
         A a = new A();
+    }
+
+    /**
+     * 无意识递归调用,Java 编程思想
+     */
+    private static void recursionString(){
+        Nothing nothing = new Nothing();
+        nothing.toString();
     }
 }
