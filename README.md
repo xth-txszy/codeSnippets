@@ -1,2 +1,2 @@
-# -codeSnippets
+# codeSnippets
 代码片段
