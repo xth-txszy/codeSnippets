@@ -1,11 +1,13 @@
 package stackoverflow;
 
+import java.util.Arrays;
+
 /**
  * StatckOverFlow的一万种方法?
  */
 public class StackOverFlowTest {
     public static void main(String[] args) {
-        recursionString();
+        constructSelf();
     }
 
 
@@ -29,5 +31,13 @@ public class StackOverFlowTest {
     private static void recursionString(){
         Nothing nothing = new Nothing();
         nothing.toString();
+    }
+
+    /**
+     * 实际上也是递归
+     * 构造方法互相调用
+     */
+    private static void constructSelf(){
+        new C();
     }
 }
